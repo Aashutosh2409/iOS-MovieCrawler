@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController{
+    NSArray *text1;
+    NSArray *image;
+    
+}
 
 @end

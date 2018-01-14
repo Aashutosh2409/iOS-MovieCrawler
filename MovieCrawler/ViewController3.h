@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController3 : UIViewController
+@property NSString *str;
+@property (strong, nonatomic) IBOutlet UILabel *lb4;
+- (IBAction)play:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *img1;
 
 @end

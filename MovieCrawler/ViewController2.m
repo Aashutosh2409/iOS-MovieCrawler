@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+      _lb3.text=[NSString stringWithFormat:@"%@",_namep];
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +35,17 @@
 }
 */
 
+- (IBAction)facebook:(id)sender {
+    SLComposeViewController *pr=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+    [pr setInitialText:@"Movie Crawler promote"];
+    [self presentViewController:pr animated:YES completion:nil];
+}
+
+- (IBAction)twitter:(id)sender {
+    SLComposeViewController *prp=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [prp setInitialText:@"Movie Crawler promote"];
+    [self presentViewController:prp animated:YES completion:nil];
+
+    
+}
 @end
